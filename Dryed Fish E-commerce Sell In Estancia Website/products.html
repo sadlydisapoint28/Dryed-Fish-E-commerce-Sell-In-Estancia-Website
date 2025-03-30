@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Estancia Dried Fish E-Commerce | Premium Quality Fish Products</title>
+    <link rel="stylesheet" href="styles/modern.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Browse our selection of premium quality dried fish products from Estancia, Iloilo. Find Danggit, Tuyo, Dilis, Pusit, and more.">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Estancia Dried Fish</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our premium quality dried fish products directly from Estancia</p>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <div class="container">
+        <section class="product-filters">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="danggit">Danggit</option>
+                        <option value="tuyo">Tuyo</option>
+                        <option value="dilis">Dilis</option>
+                        <option value="pusit">Pusit</option>
+                        <option value="tinapa">Tinapa</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
+                <div class="filter-group search">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Danggit Products -->
+                <div class="product-card" data-category="danggit">
+                    <span class="product-badge">Best Seller</span>
+                    <img src="images/dried-danggit.jpg" alt="Regular Dried Danggit">
+                    <div class="content">
+                        <h3>Regular Dried Danggit</h3>
+                        <span class="price">₱350.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="danggit">
+                    <img src="images/premium-danggit.jpg" alt="Premium Dried Danggit">
+                    <div class="content">
+                        <h3>Premium Dried Danggit</h3>
+                        <span class="price">₱450.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="danggit">
+                    <span class="product-badge">Premium</span>
+                    <img src="images/boneless-danggit.jpg" alt="Boneless Danggit">
+                    <div class="content">
+                        <h3>Boneless Danggit</h3>
+                        <span class="price">₱500.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Tuyo Products -->
+                <div class="product-card" data-category="tuyo">
+                    <img src="images/dried-tuyo.jpg" alt="Regular Dried Tuyo">
+                    <div class="content">
+                        <h3>Regular Dried Tuyo</h3>
+                        <span class="price">₱280.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tuyo">
+                    <img src="images/premium-tuyo.jpg" alt="Premium Dried Tuyo">
+                    <div class="content">
+                        <h3>Premium Dried Tuyo</h3>
+                        <span class="price">₱350.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tuyo">
+                    <span class="product-badge">Specialty</span>
+                    <img src="images/gourmet-tuyo.jpg" alt="Gourmet Tuyo in Olive Oil">
+                    <div class="content">
+                        <h3>Gourmet Tuyo in Olive Oil</h3>
+                        <span class="price">₱420.00 / bottle</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Dilis Products -->
+                <div class="product-card" data-category="dilis">
+                    <img src="images/dried-dilis.jpg" alt="Regular Dried Dilis">
+                    <div class="content">
+                        <h3>Regular Dried Dilis</h3>
+                        <span class="price">₱220.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="dilis">
+                    <span class="product-badge">Premium</span>
+                    <img src="images/premium-dilis.jpg" alt="Premium Dried Dilis">
+                    <div class="content">
+                        <h3>Premium Dried Dilis</h3>
+                        <span class="price">₱280.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Pusit Products -->
+                <div class="product-card" data-category="pusit">
+                    <img src="images/dried-pusit.jpg" alt="Regular Dried Pusit">
+                    <div class="content">
+                        <h3>Regular Dried Pusit</h3>
+                        <span class="price">₱450.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pusit">
+                    <span class="product-badge">Premium</span>
+                    <img src="images/premium-pusit.jpg" alt="Premium Dried Pusit">
+                    <div class="content">
+                        <h3>Premium Dried Pusit</h3>
+                        <span class="price">₱550.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Tinapa Products -->
+                <div class="product-card" data-category="tinapa">
+                    <img src="images/tinapa-galunggong.jpg" alt="Tinapa Galunggong">
+                    <div class="content">
+                        <h3>Tinapa Galunggong</h3>
+                        <span class="price">₱180.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tinapa">
+                    <span class="product-badge">Best Seller</span>
+                    <img src="images/tinapa-bangus.jpg" alt="Tinapa Bangus">
+                    <div class="content">
+                        <h3>Tinapa Bangus</h3>
+                        <span class="price">₱250.00 / pack</span>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Complete Information -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <h3>Estancia Dried Fish</h3>
+                    <p>The premier source of authentic dried fish products straight from Estancia, Iloilo - the Dried Fish Capital of the Philippines.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="bestsellers.html">Best Sellers</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li><a href="category-danggit.html">Danggit</a></li>
+                        <li><a href="category-tuyo.html">Tuyo</a></li>
+                        <li><a href="category-dilis.html">Dilis</a></li>
+                        <li><a href="category-pusit.html">Pusit</a></li>
+                        <li><a href="category-tinapa.html">Tinapa</a></li>
+                        <li><a href="category-specialty.html">Specialty Products</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fishermen's Wharf, Estancia, Iloilo</li>
+                        <li><i class="fas fa-phone"></i> +63 (045) 123-4567</li>
+                        <li><i class="fas fa-mobile-alt"></i> +63 912 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> info@estanciadriedfish.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers, free giveaways, and updates on our new products.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h4>Payment Methods</h4>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <img src="images/gcash-logo.png" alt="GCash">
+                    <img src="images/paymaya-logo.png" alt="PayMaya">
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="bottom-footer">
+                <p>&copy; 2025 Estancia Dried Fish. All Rights Reserved.</p>
+                <p>Website designed by <a href="#">YourCompany</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
